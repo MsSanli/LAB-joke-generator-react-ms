@@ -17,7 +17,7 @@ const JokeGenerator = () => {
   };
 
   return (
-    <div>
+    <div className="text-center d-flex flex-column justify-content-center align-content-center">
       <h1>Check out this Joke Generator!</h1>
       {joke && <p>{isSetup ? joke.setup : joke.delivery}</p>}
       {/* ^if joke is truthy, will render p element w/ setup or delivery of joke based on value of isSetup */}
